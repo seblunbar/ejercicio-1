@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,9 +15,14 @@
     
     <a-plane position="0 -1 0" rotation="-90 0 0" width="10" height="10" color="#858585"></a-plane>
 
-    <a-box id="caja" position="-1 0 -3" scale="1 1 1" color="#e60b0b"></a-box>
+    <a-box id="caja" 
+           position="-1 0 -3"
+           scale="1 1 1" 
+           color="#e60b0b"
+           animation="property: rotation; to: 0 360 0; dur: 4000; easing: linear; loop: true">
+    </a-box>
 
-    <a-sphere position="0 1.25 -5" radius="1.25" color="#366fc9"></a-sphere>
+    <a-sphere position="0 2 -4" radius="0.5" color="#366fc9"></a-sphere>
 
     <a-entity camera look-controls wasd-controls>
       <a-cursor color="#333"></a-cursor>
